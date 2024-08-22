@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ddd;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    max-width: 1600px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+}
+header nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+header > i {
+    padding: 10px 16px;
+}
+header > i:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* banner */
+
+.banner {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.banner .banner-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    gap: 10px;
+    text-align: center;
+}
+
+.banner .banner-head h1 {
+    font-size: 4.5em;
+}
+
+.banner .banner-head p {
+    font-size: x-large;
+}
+
+.banner .banner-head p span {
+    background-color: black;
+    color: white;
+    padding: 3px 5px;
+}
+
+.banner .banner-img {
+    position: relative;
+}
+
+.banner .banner-img .banner-body {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-100%);
+    color: white;
+}
+
+.banner .banner-img .banner-body strong {
+    padding: 16px 0;
+    font-size: x-large;
+}
+
+.banner .banner-img .banner-body h2 {
+    padding: 16px 0;
+    font-size: 4em;
+}
+
+.banner .banner-img .banner-body button {
+    padding: 12px 20px;
+    font-size: larger;
+    border: none;
+    background-color: gray;
+    text-transform: uppercase;
+}
+
+.banner .banner-img .banner-body button:hover {
+    background-color: #ddd;
+}
+
+/* about articles */
+
+.about-articles {
+    max-width: 1600px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1 1 calc(65% - 15px);
+}
+
+.articles article {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.articles article .article-head h2 {
+    padding: 0;
+    margin: 0;
+    font-size: xx-large;
+    font-weight: 100;
+}
+
+.articles article .article-head p {
+    padding: 30px 0 40px 0;
+    font-size: large;
+}
+
+.articles article .article-body p {
+    text-align: justify;
+    font-size: large;
+    padding: 16px 0;
+    line-height: 1.3;
+}
+
+.articles article .article-ftr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* button */
+
+.articles article .article-ftr button:first-child {
+    border: 1px solid gray;
+    display: block;
+    padding: 10px 16px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.articles article .article-ftr button:first-child:hover {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}
+
+
+.articles article .article-ftr button:last-child {
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+    padding: 10px 16px;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.articles article .article-ftr button:last-child:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.articles article .article-ftr button:last-child span:last-child {
+    background-color: white;
+    color: black;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1 1 calc(35% - 15px);
+}
+
+.about .about-name {
+    background-color: black;
+    color: white;
+}
+
+.about .about-name h3 {
+    padding: 8px 16px;
+}
+
+.about .about-name p {
+    padding: 16px;
+    line-height: 1.3;
+}
+
+.about .popular-posts {
+    background-color: white;
+}
+
+.about .popular-posts h3 {
+    font-size: x-large;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+.about .popular-posts ul li {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    padding: 16px 12px;
+}
+
+.about .popular-posts ul li img {
+    width: 50px;
+}
+
+.about .popular-posts ul li:hover {
+    background-color: #ddd;
+}
+
+.about .popular-posts ul li .hdr h4 {
+    font-weight: 100;
+}
+
+.about .advertise {
+    background-color: white;
+}
+
+.about .advertise h3 {
+    font-size: x-large;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+.about .advertise .reklama {
+    padding: 20px;
+    background-color: white;
+    height: 300px;
+}
+
+.about .advertise .reklama .rek-box {
+    background-color: #ddd;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+
+.about .tags {
+    background-color: white;
+}
+
+.about .tags h3 {
+    font-size: x-large;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+.about .tags .tags-body {
+    padding: 20px;
+}
+
+.about .tags .tags-body span {
+    background-color: #ddd;
+    margin: 5px;
+    padding: 5px 8px;
+    display: inline-block;
+    font-size: small;
+}
+
+.about .tags .tags-body span:first-child {
+    background-color: black;
+    color: white;
+}
+
+.about .inspiration {
+    background-color: white;
+}
+
+.about .inspiration h3 {
+    font-size: x-large;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+.about .inspiration .inspiration-container {
+    padding: 25px;
+}
+
+.about .inspiration .inspiration-container .inspiration-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+}
+
+.about .follow {
+    background-color: white;
+}
+
+.about .follow h3 {
+    font-size: x-large;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+.about .follow .follow-container {
+    display: flex;
+    gap: 10px;
+    padding: 25px;
+    font-size: larger;
+}
+
+.about .subscribe {
+    background-color: white;
+}
+
+.about .subscribe h3 {
+    font-size: x-large;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+.about .subscribe .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+}
+
+.about .subscribe .subscribe-container p {
+    font-size: 0.9em;
+}
+
+.about .subscribe .subscribe-container input {
+    padding: 12px;
+    border: none;
+    border: 1px solid #ddd;
+}
+
+.about .subscribe .subscribe-container input[type=submit] {
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: larger;
+}
+
+.about .subscribe .subscribe-container input[type=submit]:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+footer {
+    max-width: 1600px;
+    margin: auto;
+    background-color: #444343;
+    padding: 30px;
+}
+footer > a {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    font-size: x-large;
+}
+footer > a:hover {
+    background-color: #ddd;
+    color: black;
+}
+footer p {
+    color: white;
+    padding: 16px 0;
+    font-size: x-large;
+}
+footer p a {
+    color: white;
+}
+@media (max-width: 600px) {
+    header {
+        display: none;
+    }
+    .banner .banner-img .banner-body h2 {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+
+    .articles,
+    .about {
+        flex: 1 1 100%;
+    }
+}
